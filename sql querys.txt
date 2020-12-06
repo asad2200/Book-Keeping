@@ -1,0 +1,142 @@
+-->table for storing company detail
+	
+	drop table cmp_detail;
+
+
+	create table cmp_detail(cmpname varchar(30),country varchar(10),state varchar(15),
+	address varchar(100),e_mail varchar(30),mobile double,gstno varchar(20),id double);
+
+--->sequence for cmp_detail
+	create sequence tbl_cmp_detail 
+ 	start with 1
+	increment by 1
+	;
+
+-->  table for storing user name and password
+
+drop table user_detail;
+	create table user_detail (uname varchar(10),password varchar(10),cmpname varchar(30),id double);
+
+--->sequence for user_detail
+	create sequence tbl_user_detail
+ 	start with 1
+	increment by 1
+	;sa
+
+--->table for storing information of accounts
+    drop table account_detail;
+	//create table account_detail (accountname varchar(30),type varchar(20),
+	  //country varchar(10),state varchar(15),address varchar(100),mobile double,id double);
+ drop table account_detail;
+	(new ) create table account_detail (accountname varchar(30),type varchar(20),
+	 country varchar(10),state varchar(15),address varchar(100),mobile double,gstno varchar(20),id double,balance double);
+
+--->sequence for account_detail
+	create sequence tbl_account_detail 
+ 	start with 1
+	increment by 1
+	;
+
+--->table for storing information of accounts groups 
+    drop table accgroup_detail;
+	create table accgroup_detail (type varchar(20),undergroup varchar(20),id double);
+
+--->sequence for accgroup_detail
+	create sequence tbl_accgroup_detail
+ 	start with 1
+	increment by 1
+	;
+
+--->tabel for storing information of items
+    drop table items_detail;
+	//create table items_detail(itemname varchar(20),stock varchar(10),unit varchar(8),saleprice double,purchaseprice double,id double);
+	(new )create table items_detail(itemname varchar(20),stock varchar(10),unit varchar(8),saleprice double,purchaseprice double,id double,status 		double,hsn varchar(10));
+
+--->sequence for items_detail
+	create sequence tbl_items_detail
+ 	start with 1
+	increment by 1
+	;
+
+--->table for storing information of stock of items
+    drop table itmgroup_detail;
+	create table itmgroup_detail(type varchar(20),undergroup varchar(20),id double);
+
+--->sequence for itmgroup_detail
+	create sequence tbl_itmgroup_detail
+ 	start with 1
+	increment by 1
+	;
+
+--->table for storing information of sale
+	drop table sale_detail ;
+	//create table sale_detail (accountname varchar(30),gstno varchar(20),billdate varchar(10),billno double,tqty double,amount double,tamount double,
+	//	cgstp double,sgstp double,gstp double,discountp double,cgst double,sgst double,gst double,discount double);
+drop table sale_detail;	
+	create table sale_detail (billtype varchar(20),billno varchar(11),billdate varchar(10),accountname varchar(30),gstno varchar(20),vehicalno varchar(13),tqty 		double,amount double,discountp double,discount double,cgstp double,cgst double,sgstp double,sgst double,gstp double,gst double,cessp double,cess 		double,roundoff double,other double,tamount double);
+
+--->table for storing information of billitems
+	drop table sale_bill_items;
+	create table sale_bill_items (billno varchar(11),itemname varchar(20),qty double,unit varchar(20),hsn varchar(20),saleprice double,amount double,cgstp double,cgst double,sgstp double,sgst double,gstp double,gst double,tamount double);
+
+
+
+--->table for storing information of purchase
+	create table purchase_detail (billtype varchar(20),billno varchar(20),billdate varchar(10),accountname varchar(30),gstno varchar(20),vehicalno varchar(13),tqty 	double,amount double,discountp double,discount double,cgstp double,cgst double,sgstp double,sgst double,gstp double,gst double,cessp double,cess 			double,roundoff double,other double,tamount double);
+	
+
+--->table for storing information of purchase billitems
+	drop table purchase_bill_items; ;
+	create table purchase_bill_items (billno varchar(11),itemname varchar(20),qty double,unit varchar(20),hsn varchar(20),purchaseprice double,amount double,cgstp 		double,cgst double,sgstp double,sgst double,gstp double,gst double,tamount double);
+
+
+--->table for storing information of saleReturn
+	create table saleReturn_detail (billtype varchar(20),billno varchar(20),billdate varchar(10),accountname varchar(30),gstno varchar(20),vehicalno varchar(13),tqty double,amount double,discountp double,discount double,cgstp double,cgst double,sgstp double,sgst double,gstp double,gst double,cessp double,cess 			double,roundoff double,other double,tamount double);
+	
+
+--->table for storing information of saleReturn billitems
+	drop table saleReturn_bill_items; ;
+	create table saleReturn_bill_items (billno varchar(11),itemname varchar(20),qty double,unit varchar(20),hsn varchar(20),saleReturnprice double,amount 	double,cgstp double,cgst double,sgstp double,sgst double,gstp double,gst double,tamount double);
+
+
+--->table for storing information of purchaseReturn
+	create table purchaseReturn_detail (billtype varchar(20),billno varchar(20),billdate varchar(10),accountname varchar(30),gstno varchar(20),vehicalno varchar(13),tqty double,amount double,discountp double,discount double,cgstp double,cgst double,sgstp double,sgst double,gstp double,gst double,cessp double,cess 			double,roundoff double,other double,tamount double);
+	
+
+--->table for storing information of purchaseReturn billitems
+	drop table purchaseReturn_bill_items; ;
+	create table purchaseReturn_bill_items (billno varchar(11),itemname varchar(20),qty double,unit varchar(20),hsn varchar(20),purchaseReturnprice double,amount 	double,cgstp double,cgst double,sgstp double,sgst double,gstp double,gst double,tamount double);
+
+
+
+--->table for storing information of payment
+	drop table payment;
+	create table payment(vchno varchar(11),date varchar(10),accountname varchar(30),amount double,detail varchar(20));
+--->table for storing information of payment detail
+	drop table payment_detail;
+	create table payment_detail(vchno varchar(11),date varchar(10),accountname varchar(30),amount double,detail varchar(20));
+
+
+--->table for storing information of receipt
+	drop table receipt
+	create table receipt(vchno varchar(11),date varchar(10),accountname varchar(30),amount double,detail varchar(20));
+--->table for storing information of receipt detail
+	drop table receipt_detail;
+	create table receipt_detail(vchno varchar(11),date varchar(10),accountname varchar(30),amount double,detail varchar(20));
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+drop table dcmp_detail;
+create table dcmp_detail(cmpname varchar(30),
+country varchar(10),state varchar(15),address varchar(100),e_mail varchar(30),mobile double);
+
+
+drop table duser;
+create table duser (uname varchar(10),password varchar(10),cmpname varchar(30));
+

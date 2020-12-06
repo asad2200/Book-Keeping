@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Dec 06 07:57:15 IST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0176-35df-e741-00000a62dba0 
+on database directory E:\ACCOUNTING SOFTWERE\bin\bookkeeping with class loader sun.misc.Launcher$AppClassLoader@6f94fa3e 
+Loaded from file:/C:/Program%20Files/glassfish-4.1.1/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_261-b12
+user.dir=E:\ACCOUNTING SOFTWERE
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

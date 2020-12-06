@@ -1,0 +1,14 @@
+Sun Aug 02 02:40:40 IST 2020 : Apache Derby Network Server - 10.10.2.0 - (1582446) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Sun Aug 02 02:40:41 IST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0173-abdc-c9e9-ffffbe66ac3f 
+on database directory E:\derby project\ACCOUNTING SOFTWERE\bin\bookkeeping with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Loaded from file:/C:/Program%20Files/glassfish-4.1.1/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_201-b09
+user.dir=C:\Program Files\glassfish-4.1.1\javadb
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=E:\derby project\ACCOUNTING SOFTWERE\bin
+Database Class Loader started - derby.database.classpath=''
